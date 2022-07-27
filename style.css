@@ -17,7 +17,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -27,19 +27,22 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-    justify-content: flex-end;
     padding: 20px;
 }
 
 main {
     margin: 30px;
+
 }
 
 main section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 80px auto 0px auto;
 }
 
 main h3 {
@@ -49,11 +52,25 @@ main h3 {
 }
 
 main .imghome {
-    height: 40%;
+    height: 400px;
     width: 100vh;
+    margin-left: 10%;
+    border-radius: 10px;
+    position: relative;
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 400%;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: teal;
+    padding: 20px;
+    color: white;
 }
