@@ -36,12 +36,17 @@
 
     <main>
         <h1>Fale Conosco</h1>
+        <h4>Tem alguma dúvida? Vamos conversar!</h4>
+        <p>Ficaremos felizes em poder te ouvir!</p>
+        <p>Preencha o formulário abaixo e nos escreva se quer saber algo, se quiser deixar sua opinião, se quiser que melhoremos algo ou mesmo mandar um alô.</p>
         <section class="form">
             <form action="URL" method="get" autocomplete="on" autocapitalize="on">
-                <label>Nome</label>
-                <input type="text" name="name" id="name" placeholder="Nome">
-                <label>E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail">
+                <label class="inputlabel">Nome</label>
+                <input type="text" class="input-text" name="name" id="name" placeholder="Digite seu nome completo">
+                <br>
+                <label class="inputlabel">E-mail</label>
+                <input type="text" class="input-text" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                <br>
                 <label>Segmento</label>
                 <select>
                     <option>Agricultura</option>
@@ -62,6 +67,7 @@
                     <option>Turismo</option>
                     <option>Veículos</option>
                 </select>
+                <br>
 
                 <label>Estado</label>
                 <select>
@@ -93,8 +99,11 @@
                     <option>Sergipe</option>
                     <option>Tocantins</option>
                 </select>
-                <textarea name="volume" rows="30" id="subject" placeholder="Assunto"></textarea>
-                <input type="submit" value="Enviar">
+                <br>
+                <label>Deixe sua mensagem</label>
+                <textarea name="volume" rows="15" id="subject" placeholder="Assunto"></textarea>
+                <br>
+                <input type="submit" value="Enviar" class="btn-enviar">
             </form>
         </section>
     </main>

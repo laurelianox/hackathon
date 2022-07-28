@@ -5,16 +5,50 @@
 *
 
 html, body {
-    background-image: linear-gradient(to right, rgb(0, 120, 125), rgb(0,128,128));
+    background-image: linear-gradient(to left, rgb(26, 154, 158), rgb(0,128,128));
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
-section form {
+section, form {
     display: flex;
     flex-direction: column;
+    padding: 10px;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: white;
     font-size: 15px;
-    border: 3px solid darkcyan;
+    background-color: #085761;
+    border-radius: 8px;
 }
 h1 {
     color: white;
+}
+h4, p {
+    color: darkgray;
+}
+.form {
+    border: 3px solid darkcyan;
+}
+.input-text {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: .5s;
+}
+textarea {
+    border-radius: 5px;
+}
+.btn-enviar {
+    background-image: linear-gradient(to right, darkcyan, teal);
+    width: 40%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-enviar:hover{
+    opacity: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 400;
 }
