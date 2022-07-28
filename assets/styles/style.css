@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,900;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 2px;
+    width: 140px;
+    height: 80px;
+}
+
+.menu{
+   position: absolute;
+   left: 0;
+   top: 80px;
+   width: 100%;
+   overflow: hidden;
+   background-color: #085761;
+   text-align: center;
+}
+.hide{
+   transition: 1s;
+   height:0;
+}
+
+.show{
+   transition: 1s;
+   height: 150px;
+}
+
+.menu a{
+   display: inline-block;
+   padding: 10px 0;
+   text-decoration: none;
+   font-size: 23px;
+   color: white;
+}
+
+.menu a:hover{
+   text-decoration: underline;
+}
+
+.icon-menu svg{
+   font-size: 23px;
+   color: white;
+   cursor: pointer;
+}
+
+.menu-ativado{
+    margin:155px 30px 0;
+    transition: 1s;
+}
+
+.menu-desativado{
+    margin: 30px;
+    transition: 1s;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 30px auto 0px auto;
+}
+
+main h3 {
+    margin-top: 10px;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+main .imghome {
+    height: 400px;
+    width: 100vh;
+    margin-left: 10%;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    font-size: 400%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: teal;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* FORMULÁRIO */
+main .subimg div form {
+    width: 400px;
+    height: 200px;
+    background-color: #ebe8e8;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+main .subimg div form #email {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    border: 1px solid teal;
+}
+
+main .subimg div form #password {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid teal;
+}
+
+main .subimg div form button {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    background-color: teal;
+}
+
+main .subimg div form label {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+main .subimg div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
