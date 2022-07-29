@@ -1,3 +1,5 @@
+// Animação no header
+
 const iconMenu = document.querySelector('.icon-menu');
 
 iconMenu.addEventListener('click',()=>{
@@ -17,3 +19,17 @@ iconMenu.addEventListener('click',()=>{
         menu.classList.remove('menu-activeted')
     }
 })
+
+
+// Navegação entre a páginas 
+
+
+function comunidade() {
+    window.location.href = 'comunidade.html'
+}
+
+function home(){
+    window.location.href = 'index.html'
+}
+
+

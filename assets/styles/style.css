@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,61 +30,60 @@ header {
     padding: 5px;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.logo{
-    width: 100px;
-    height: 70px;
+.logo {
+    margin-top: 2px;
+    width: 140px;
+    height: 80px;
 }
 
-.menu{
-   position: absolute;
-   left: 0;
-   top: 80px;
-   width: 100%;
-   overflow: hidden;
-   background-color: #085761;
-   text-align: center;
+.menu {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #085761;
+    text-align: center;
 }
-.hide{
-   transition: 1s;
-   height:0;
-}
-
-.show{
-   transition: 1s;
-   height: 150px;
+.hide {
+    transition: 1s;
+    height: 0;
 }
 
-.menu a{
-   display: inline-block;
-   padding: 10px 0;
-   text-decoration: none;
-   font-size: 23px;
-   color: white;
+.show {
+    transition: 1s;
+    height: 150px;
 }
 
-.menu a:hover{
-   text-decoration: underline;
+.menu a {
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
 }
 
-.icon-menu svg{
-   font-size: 23px;
-   color: white;
-   cursor: pointer;
+.menu a:hover {
+    text-decoration: underline;
 }
 
-.menu-ativado{
-    margin:155px 30px 0;
+.icon-menu svg {
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-ativado {
+    margin: 155px 30px 0;
     transition: 1s;
 }
 
-.menu-desativado{
+.menu-desativado {
     margin: 30px;
     transition: 1s;
 }
-
 
 main section {
     display: flex;
@@ -93,11 +92,11 @@ main section {
     align-items: center;
     justify-content: space-between;
     max-width: 980px;
-    margin: 80px auto 0px auto;
+    margin: 30px auto 0px auto;
 }
 
 main h3 {
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 17px;
     margin-right: 30px;
 }
@@ -124,4 +123,99 @@ footer {
     background-color: teal;
     padding: 20px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FORMULÁRIO */
+main .subimg div form {
+    width: 400px;
+    height: 200px;
+    background-color: #ebe8e8;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+main .subimg div form #email {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    border: 1px solid teal;
+}
+
+main .subimg div form #password {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid teal;
+}
+
+main .subimg div form button {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 17px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    background-color: teal;
+}
+
+main .subimg div form label {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+main .subimg div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* html, body {
+    background-image: linear-gradient(to right, rgb(0, 120, 125), rgb(0,128,128));
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+} */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border: 3px solid darkcyan;
+    /* width: 40%; */
+    /* height: 80%; */
+}
+
+.form form label {
+    margin: 2px;
+}
+.form form input {
+    margin: 2px;
+    /* width: 20%; */
+}
+h1 {
+    color: black;
+}
+
+main {
+    height: 100vh;
 }
